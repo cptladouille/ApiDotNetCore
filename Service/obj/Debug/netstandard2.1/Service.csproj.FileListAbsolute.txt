@@ -1,0 +1,13 @@
+C:\Users\Rémy\source\repos\ApiDotNet\Service\bin\Debug\netstandard2.1\Service.deps.json
+C:\Users\Rémy\source\repos\ApiDotNet\Service\bin\Debug\netstandard2.1\Service.dll
+C:\Users\Rémy\source\repos\ApiDotNet\Service\bin\Debug\netstandard2.1\Service.pdb
+C:\Users\Rémy\source\repos\ApiDotNet\Service\bin\Debug\netstandard2.1\Model.dll
+C:\Users\Rémy\source\repos\ApiDotNet\Service\bin\Debug\netstandard2.1\Repository.dll
+C:\Users\Rémy\source\repos\ApiDotNet\Service\bin\Debug\netstandard2.1\Model.pdb
+C:\Users\Rémy\source\repos\ApiDotNet\Service\bin\Debug\netstandard2.1\Repository.pdb
+C:\Users\Rémy\source\repos\ApiDotNet\Service\obj\Debug\netstandard2.1\Service.csprojAssemblyReference.cache
+C:\Users\Rémy\source\repos\ApiDotNet\Service\obj\Debug\netstandard2.1\Service.AssemblyInfoInputs.cache
+C:\Users\Rémy\source\repos\ApiDotNet\Service\obj\Debug\netstandard2.1\Service.AssemblyInfo.cs
+C:\Users\Rémy\source\repos\ApiDotNet\Service\obj\Debug\netstandard2.1\Service.csproj.CopyComplete
+C:\Users\Rémy\source\repos\ApiDotNet\Service\obj\Debug\netstandard2.1\Service.dll
+C:\Users\Rémy\source\repos\ApiDotNet\Service\obj\Debug\netstandard2.1\Service.pdb

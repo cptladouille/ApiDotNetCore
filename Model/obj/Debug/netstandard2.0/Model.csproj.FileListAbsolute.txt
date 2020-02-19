@@ -1,0 +1,8 @@
+C:\Users\Rémy\source\repos\MovieLocation\bin\Debug\netstandard2.0\Model.deps.json
+C:\Users\Rémy\source\repos\MovieLocation\bin\Debug\netstandard2.0\Model.dll
+C:\Users\Rémy\source\repos\MovieLocation\bin\Debug\netstandard2.0\Model.pdb
+C:\Users\Rémy\source\repos\MovieLocation\obj\Debug\netstandard2.0\Model.csprojAssemblyReference.cache
+C:\Users\Rémy\source\repos\MovieLocation\obj\Debug\netstandard2.0\Model.AssemblyInfoInputs.cache
+C:\Users\Rémy\source\repos\MovieLocation\obj\Debug\netstandard2.0\Model.AssemblyInfo.cs
+C:\Users\Rémy\source\repos\MovieLocation\obj\Debug\netstandard2.0\Model.dll
+C:\Users\Rémy\source\repos\MovieLocation\obj\Debug\netstandard2.0\Model.pdb

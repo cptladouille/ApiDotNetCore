@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
 using Model;
@@ -18,9 +19,15 @@ namespace Repository.Repositories
             this._context = context;
         }
 
-        public List<Movie> GetAllMovies()
+        public List<Movie> GetAllMovies(string title= null)
         {
-            return this._context.Movies.ToList();
+            var query = this._context.Movies.AsQueryable();
+            if (title != null)
+            {
+                query = query.Where(x => x.Title.Contains(title));
+            }
+
+            return query.ToList();
         }
 
         public Movie Add(Movie movie)
@@ -32,7 +39,12 @@ namespace Repository.Repositories
 
         public bool Delete(int id)
         {
-            _context.Movies.Remove(GetAllMovies().Find(x => x.Id == id));
+            var toDelete = GetAllMovies().Find(x => x.Id == id);
+            if (toDelete != null)
+            {
+                return false;
+            }
+            _context.Movies.Remove(toDelete);
             _context.SaveChanges();
             return true;
         }

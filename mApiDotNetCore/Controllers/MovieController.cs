@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -22,8 +23,14 @@ namespace mApiDotNetCore.Controllers
             this.mRepo = mRepo;
         }
 
+        [HttpGet("{title}")]
+        public IEnumerable<Movie> Get(string title = null)
+        {
+            return mRepo.GetAllMovies(title);
+        }
+
         [HttpGet]
-        public IEnumerable<Movie> Get()
+        public IEnumerable<Movie> GetByTitle()
         {
             return mRepo.GetAllMovies();
         }
@@ -36,9 +43,7 @@ namespace mApiDotNetCore.Controllers
             {
                 return Ok(res);
             }
-
             return BadRequest("Cannot add movie in db, check payload");
-
         }
 
         [HttpPut("{id}")]
@@ -48,10 +53,13 @@ namespace mApiDotNetCore.Controllers
         }
 
         [HttpDelete("{id}")]
-        public bool Delete(int id)
+        public IActionResult Delete(int id)
         {
-            return mRepo.Delete(id);
+            if(mRepo.Delete(id))
+            {
+                return Ok();
+            }
+            return BadRequest("Cannot delete movie in db");
         }
-
     }
 }

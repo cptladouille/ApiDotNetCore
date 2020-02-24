@@ -7,7 +7,7 @@ namespace Service.interfaces
 {
     public interface IMovieService
     {
-        List<Movie> GetAllMovies();
+        List<Movie> GetAllMovies(string title = null);
         Movie Add(Movie movie);
         bool Delete(int id);
         Movie Update(int id, Movie movie);

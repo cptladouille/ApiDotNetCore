@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace Model.Entities
@@ -12,6 +13,10 @@ namespace Model.Entities
         public string Description { get; set; }
         public int Duration { get; set; }
         public DateTime ReleaseDate  { get; set; }
+        public Person Director { get; set; }
+        public ICollection<Comment> Comment { get; set; }
+        public ICollection<MovieActor> Actors { get; set; }
+
 
         public Movie()
         {

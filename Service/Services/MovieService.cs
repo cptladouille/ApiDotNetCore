@@ -46,7 +46,7 @@ namespace Service.Services
 
         public bool CheckDateMin(Movie movie)
         {
-            return movie.ReleaseDate.Year < 1981;
+            return movie.ReleaseDate.Year > 1981;
         }
     }
 }

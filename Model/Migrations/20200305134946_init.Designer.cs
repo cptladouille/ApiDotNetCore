@@ -9,8 +9,8 @@ using Model;
 namespace Model.Migrations
 {
     [DbContext(typeof(MovieDbContext))]
-    [Migration("20200220160417_migration_2")]
-    partial class migration_2
+    [Migration("20200305134946_init")]
+    partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -72,21 +72,13 @@ namespace Model.Migrations
 
             modelBuilder.Entity("Model.Entities.MovieActor", b =>
                 {
-                    b.Property<int>("IdPerson")
+                    b.Property<int>("PersonId")
                         .HasColumnType("int");
 
-                    b.Property<int>("IdMovie")
+                    b.Property<int>("MovieId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("ActorId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("MovieId")
-                        .HasColumnType("int");
-
-                    b.HasKey("IdPerson", "IdMovie");
-
-                    b.HasIndex("ActorId");
+                    b.HasKey("PersonId", "MovieId");
 
                     b.HasIndex("MovieId");
 
@@ -129,13 +121,17 @@ namespace Model.Migrations
 
             modelBuilder.Entity("Model.Entities.MovieActor", b =>
                 {
-                    b.HasOne("Model.Entities.Person", "Actor")
-                        .WithMany("PlayedMovies")
-                        .HasForeignKey("ActorId");
-
                     b.HasOne("Model.Entities.Movie", "Movie")
                         .WithMany("Actors")
-                        .HasForeignKey("MovieId");
+                        .HasForeignKey("MovieId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Model.Entities.Person", "Actor")
+                        .WithMany("PlayedMovies")
+                        .HasForeignKey("PersonId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

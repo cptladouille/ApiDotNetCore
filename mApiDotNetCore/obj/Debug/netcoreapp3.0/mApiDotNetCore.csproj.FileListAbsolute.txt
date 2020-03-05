@@ -121,10 +121,13 @@ C:\Users\Rémy\source\repos\ApiDotNet\mApiDotNetCore\bin\Debug\netcoreapp3.0\Ser
 C:\Users\Rémy\source\repos\ApiDotNet\mApiDotNetCore\obj\Debug\netcoreapp3.0\mApiDotNetCore.csprojAssemblyReference.cache
 C:\Users\Rémy\source\repos\ApiDotNet\mApiDotNetCore\obj\Debug\netcoreapp3.0\staticwebassets\mApiDotNetCore.StaticWebAssets.Manifest.cache
 C:\Users\Rémy\source\repos\ApiDotNet\mApiDotNetCore\obj\Debug\netcoreapp3.0\staticwebassets\mApiDotNetCore.StaticWebAssets.xml
-C:\Users\Rémy\source\repos\ApiDotNet\mApiDotNetCore\obj\Debug\netcoreapp3.0\mApiDotNetCore.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Rémy\source\repos\ApiDotNet\mApiDotNetCore\obj\Debug\netcoreapp3.0\mApiDotNetCore.AssemblyInfoInputs.cache
 C:\Users\Rémy\source\repos\ApiDotNet\mApiDotNetCore\obj\Debug\netcoreapp3.0\mApiDotNetCore.AssemblyInfo.cs
 C:\Users\Rémy\source\repos\ApiDotNet\mApiDotNetCore\obj\Debug\netcoreapp3.0\mApiDotNetCore.RazorTargetAssemblyInfo.cache
 C:\Users\Rémy\source\repos\ApiDotNet\mApiDotNetCore\obj\Debug\netcoreapp3.0\mApiDotNetCore.csproj.CopyComplete
 C:\Users\Rémy\source\repos\ApiDotNet\mApiDotNetCore\obj\Debug\netcoreapp3.0\mApiDotNetCore.dll
 C:\Users\Rémy\source\repos\ApiDotNet\mApiDotNetCore\obj\Debug\netcoreapp3.0\mApiDotNetCore.pdb
+C:\Users\Rémy\source\repos\ApiDotNet\mApiDotNetCore\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Rémy\source\repos\ApiDotNet\mApiDotNetCore\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Rémy\source\repos\ApiDotNet\mApiDotNetCore\bin\Debug\netcoreapp3.0\Newtonsoft.Json.Bson.dll
+C:\Users\Rémy\source\repos\ApiDotNet\mApiDotNetCore\obj\Debug\netcoreapp3.0\mApiDotNetCore.MvcApplicationPartsAssemblyInfo.cache

@@ -6,8 +6,8 @@ namespace Model.Entities
 {
     public class MovieActor
     {
-        public int IdMovie { get; set; }
-        public int IdPerson { get; set; }
+        public int MovieId { get; set; }
+        public int PersonId { get; set; }
         public Movie Movie { get; set; }
         public Person Actor { get; set; }
     }

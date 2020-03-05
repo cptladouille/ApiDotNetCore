@@ -42,7 +42,10 @@ namespace Model
                 .HasMany(x => x.PlayedMovies)
                 .WithOne(x => x.Actor);
 
-            modelBuilder.Entity<MovieActor>().HasKey(x => new {x.IdPerson, x.IdMovie});
+            modelBuilder.Entity<MovieActor>(options =>
+            {
+                options.HasKey(x => new {x.PersonId, x.MovieId});
+            });
 
             /*
              *dotnet ef migrations add migration_2 --project Model --startup-project mApiDotNetCore

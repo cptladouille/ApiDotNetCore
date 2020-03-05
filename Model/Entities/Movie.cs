@@ -2,12 +2,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using Newtonsoft.Json;
 
 namespace Model.Entities
 {
     public class Movie
     {
-        [Key] public int Id { get; set; }
+        [Key] 
+        public int Id { get; set; }
         public string Title { get; set; }
         [Required]
         public string Description { get; set; }
@@ -15,6 +17,7 @@ namespace Model.Entities
         public DateTime ReleaseDate  { get; set; }
         public Person Director { get; set; }
         public ICollection<Comment> Comment { get; set; }
+        [JsonIgnore]
         public ICollection<MovieActor> Actors { get; set; }
 
 
@@ -28,6 +31,7 @@ namespace Model.Entities
             Description = description;
             Duration = duration;
             ReleaseDate = releaseDate;
+            
         }
 
         public IEnumerator GetEnumerator()

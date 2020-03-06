@@ -16,7 +16,9 @@ namespace Model.Entities
         public int Duration { get; set; }
         public DateTime ReleaseDate  { get; set; }
         public Person Director { get; set; }
-        public ICollection<Comment> Comment { get; set; }
+        public ICollection<Comment> Comment { get; set; } 
+        //ignoré au chargement et a l'ajout
+        //obligation d'utiliser un incluide ?
         [JsonIgnore]
         public ICollection<MovieActor> Actors { get; set; }
 

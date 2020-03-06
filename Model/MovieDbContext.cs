@@ -8,6 +8,7 @@ namespace Model
 
     {
         public virtual DbSet<Movie> Movies { get; set; }
+        public virtual DbSet<Person> Person { get; set; }
 
         public MovieDbContext()
         {

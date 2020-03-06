@@ -34,8 +34,8 @@ namespace mApiDotNetCore
             services.AddControllers();
             services.AddDbContext<MovieDbContext>(options =>
                 options.UseMySql(Configuration.GetConnectionString("MovieDb")));
-            //services.AddScoped<IMovieRepository, StaticMovieRepository>();
             services.AddScoped<IMovieRepository, MovieRepository>();
+            services.AddScoped<IPersonRepository, PersonRepository>();
             services.AddScoped<IMovieService, MovieService>();
             services.AddMvc().AddNewtonsoftJson();
         }

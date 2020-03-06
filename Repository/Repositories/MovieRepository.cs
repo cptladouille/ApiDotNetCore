@@ -13,10 +13,12 @@ namespace Repository.Repositories
     public class MovieRepository : IMovieRepository
     {
         private readonly MovieDbContext _context;
+        private readonly IPersonRepository _personRepository;
 
-        public MovieRepository(MovieDbContext context)
+        public MovieRepository(MovieDbContext context, IPersonRepository personRepository)
         {
             this._context = context;
+            this._personRepository = personRepository;
         }
 
         public List<Movie> GetAllMovies(string title= null)
@@ -32,6 +34,18 @@ namespace Repository.Repositories
 
         public Movie Add(Movie movie)
         {
+            if (movie.Director != null)
+            {
+                movie.Director = _personRepository.Exists(movie.Director) ?? movie.Director;
+            }
+
+            if (movie.Actors != null)
+            {
+                foreach (var a in movie.Actors)
+                {
+                     a.Actor = _personRepository.Exists(a.Actor) ?? a.Actor;
+                }
+            }
             _context.Movies.Add(movie);
             _context.SaveChanges();
             return movie;
@@ -40,7 +54,7 @@ namespace Repository.Repositories
         public bool Delete(int id)
         {
             var toDelete = GetAllMovies().Find(x => x.Id == id);
-            if (toDelete != null)
+            if (toDelete == null)
             {
                 return false;
             }

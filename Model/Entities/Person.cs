@@ -8,6 +8,7 @@ namespace Model.Entities
 {
     public class Person
     {
+        [Key]
         public int Id { get; set; }
 
         public string LastName { get; set; }

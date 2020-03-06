@@ -1,12 +1,11 @@
-﻿using System.Security.Cryptography.X509Certificates;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Model.Entities;
 
 namespace Model
 {
     public class MovieDbContext: DbContext
-
     {
+        public virtual DbSet<Category> Categories { get; set; }
         public virtual DbSet<Movie> Movies { get; set; }
         public virtual DbSet<Person> Person { get; set; }
 

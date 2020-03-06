@@ -20,3 +20,14 @@ C:\Users\Rémy\source\repos\ApiDotNet\Repository\obj\Debug\netstandard2.1\Reposi
 C:\Users\Rémy\source\repos\ApiDotNet\Repository\obj\Debug\netstandard2.1\Repository.csproj.CopyComplete
 C:\Users\Rémy\source\repos\ApiDotNet\Repository\obj\Debug\netstandard2.1\Repository.dll
 C:\Users\Rémy\source\repos\ApiDotNet\Repository\obj\Debug\netstandard2.1\Repository.pdb
+C:\Users\lwies\OneDrive\Documents\Sources\CNAM\ApiDotNetCore\Repository\bin\Debug\netstandard2.1\Repository.deps.json
+C:\Users\lwies\OneDrive\Documents\Sources\CNAM\ApiDotNetCore\Repository\bin\Debug\netstandard2.1\Repository.dll
+C:\Users\lwies\OneDrive\Documents\Sources\CNAM\ApiDotNetCore\Repository\bin\Debug\netstandard2.1\Repository.pdb
+C:\Users\lwies\OneDrive\Documents\Sources\CNAM\ApiDotNetCore\Repository\bin\Debug\netstandard2.1\Model.dll
+C:\Users\lwies\OneDrive\Documents\Sources\CNAM\ApiDotNetCore\Repository\bin\Debug\netstandard2.1\Model.pdb
+C:\Users\lwies\OneDrive\Documents\Sources\CNAM\ApiDotNetCore\Repository\obj\Debug\netstandard2.1\Repository.csprojAssemblyReference.cache
+C:\Users\lwies\OneDrive\Documents\Sources\CNAM\ApiDotNetCore\Repository\obj\Debug\netstandard2.1\Repository.AssemblyInfoInputs.cache
+C:\Users\lwies\OneDrive\Documents\Sources\CNAM\ApiDotNetCore\Repository\obj\Debug\netstandard2.1\Repository.AssemblyInfo.cs
+C:\Users\lwies\OneDrive\Documents\Sources\CNAM\ApiDotNetCore\Repository\obj\Debug\netstandard2.1\Repository.csproj.CopyComplete
+C:\Users\lwies\OneDrive\Documents\Sources\CNAM\ApiDotNetCore\Repository\obj\Debug\netstandard2.1\Repository.dll
+C:\Users\lwies\OneDrive\Documents\Sources\CNAM\ApiDotNetCore\Repository\obj\Debug\netstandard2.1\Repository.pdb

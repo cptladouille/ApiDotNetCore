@@ -2,11 +2,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using Model.Interfaces;
 using Newtonsoft.Json;
 
 namespace Model.Entities
 {
-    public class Movie
+    public class Movie : IEntity
     {
         [Key] 
         public int Id { get; set; }
@@ -21,6 +22,7 @@ namespace Model.Entities
         //obligation d'utiliser un incluide ?
         [JsonIgnore]
         public ICollection<MovieActor> Actors { get; set; }
+        public Category Category { get; set; }
 
 
         public Movie()

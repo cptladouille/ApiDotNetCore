@@ -7,19 +7,18 @@ using Repository.Interfaces;
 
 namespace Repository.Repositories
 {
-    public class PersonRepository : IPersonRepository
+    public class PersonRepository : RepositoryGeneric<Person>, IPersonRepository
     {
-
         private readonly MovieDbContext _context;
 
-        public PersonRepository(MovieDbContext context)
+        public PersonRepository(MovieDbContext context) : base(context)
         {
             this._context = context;
         }
+
         public List<Person> GetAllPerson()
         {
-            return _context.Person.ToList();
-
+            return this.GetAll();
         }
 
         public Person Add(Person person)
@@ -49,7 +48,6 @@ namespace Repository.Repositories
             _context.SaveChanges();
             return toModify; 
         }
-
 
         public Person Exists(Person person)
         {

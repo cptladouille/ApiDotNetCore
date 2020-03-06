@@ -21,6 +21,11 @@ namespace Repository.Repositories
             this._personRepository = personRepository;
         }
 
+        public List<Movie> GetAllMovies()
+        {
+            return _context.Set<Movie>().ToList();
+        }
+
         public List<Movie> GetAllMovies(string title= null)
         {
             var query = this._context.Movies.AsQueryable();

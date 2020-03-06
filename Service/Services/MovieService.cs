@@ -1,21 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Service.interfaces;
-using Model.Entities;
+﻿using Model.Entities;
 using Repository.Interfaces;
+using Service.interfaces;
+using System.Collections.Generic;
 
 namespace Service.Services
 {
-    public class MovieService : IMovieService
+    public class MovieService : ServiceGeneric<Movie>, IMovieService
     {
         private readonly IMovieRepository _mRepo;
-        public MovieService(IMovieRepository repo)
+        public MovieService(IMovieRepository repo, IRepositoryGeneric<Movie> movieRepo) : 
+            base(movieRepo)
         {
             this._mRepo = repo;
         }
-        public Movie Add(Movie movie)
+
+        public override Movie Create(Movie movie)
         {
             var dbMovie = _mRepo.GetByTitle(movie.Title);
             if (dbMovie == null && CheckDateMin(movie))

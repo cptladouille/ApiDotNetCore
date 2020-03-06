@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
+using Model.Interfaces;
 using Newtonsoft.Json;
 
 namespace Model.Entities
 {
-    public class Person
+    public class Person : IEntity
     {
         [Key]
         public int Id { get; set; }

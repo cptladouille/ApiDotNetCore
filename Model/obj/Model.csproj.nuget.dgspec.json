@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Rémy\\source\\repos\\ApiDotNet\\Model\\Model.csproj": {}
+    "C:\\Users\\lwies\\OneDrive\\Documents\\Sources\\CNAM\\ApiDotNetCore\\Model\\Model.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Rémy\\source\\repos\\ApiDotNet\\Model\\Model.csproj": {
+    "C:\\Users\\lwies\\OneDrive\\Documents\\Sources\\CNAM\\ApiDotNetCore\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rémy\\source\\repos\\ApiDotNet\\Model\\Model.csproj",
+        "projectUniqueName": "C:\\Users\\lwies\\OneDrive\\Documents\\Sources\\CNAM\\ApiDotNetCore\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "C:\\Users\\Rémy\\source\\repos\\ApiDotNet\\Model\\Model.csproj",
-        "packagesPath": "C:\\Users\\Rémy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rémy\\source\\repos\\ApiDotNet\\Model\\obj\\",
+        "projectPath": "C:\\Users\\lwies\\OneDrive\\Documents\\Sources\\CNAM\\ApiDotNetCore\\Model\\Model.csproj",
+        "packagesPath": "C:\\Users\\lwies\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lwies\\OneDrive\\Documents\\Sources\\CNAM\\ApiDotNetCore\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Rémy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lwies\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,7 +25,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://nexus.capcod.cloud/repository/nuget-group/": {}
         },
         "frameworks": {
           "netstandard2.1": {
@@ -71,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

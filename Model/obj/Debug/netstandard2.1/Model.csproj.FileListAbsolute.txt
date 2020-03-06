@@ -14,3 +14,11 @@ C:\Users\Rémy\source\repos\ApiDotNet\Model\obj\Debug\netstandard2.1\Model.Assem
 C:\Users\Rémy\source\repos\ApiDotNet\Model\obj\Debug\netstandard2.1\Model.AssemblyInfo.cs
 C:\Users\Rémy\source\repos\ApiDotNet\Model\obj\Debug\netstandard2.1\Model.dll
 C:\Users\Rémy\source\repos\ApiDotNet\Model\obj\Debug\netstandard2.1\Model.pdb
+C:\Users\lwies\OneDrive\Documents\Sources\CNAM\ApiDotNetCore\Model\bin\Debug\netstandard2.1\Model.deps.json
+C:\Users\lwies\OneDrive\Documents\Sources\CNAM\ApiDotNetCore\Model\bin\Debug\netstandard2.1\Model.dll
+C:\Users\lwies\OneDrive\Documents\Sources\CNAM\ApiDotNetCore\Model\bin\Debug\netstandard2.1\Model.pdb
+C:\Users\lwies\OneDrive\Documents\Sources\CNAM\ApiDotNetCore\Model\obj\Debug\netstandard2.1\Model.csprojAssemblyReference.cache
+C:\Users\lwies\OneDrive\Documents\Sources\CNAM\ApiDotNetCore\Model\obj\Debug\netstandard2.1\Model.AssemblyInfoInputs.cache
+C:\Users\lwies\OneDrive\Documents\Sources\CNAM\ApiDotNetCore\Model\obj\Debug\netstandard2.1\Model.AssemblyInfo.cs
+C:\Users\lwies\OneDrive\Documents\Sources\CNAM\ApiDotNetCore\Model\obj\Debug\netstandard2.1\Model.dll
+C:\Users\lwies\OneDrive\Documents\Sources\CNAM\ApiDotNetCore\Model\obj\Debug\netstandard2.1\Model.pdb

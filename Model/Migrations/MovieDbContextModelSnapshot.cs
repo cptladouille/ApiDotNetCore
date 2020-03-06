@@ -17,6 +17,21 @@ namespace Model.Migrations
                 .HasAnnotation("ProductVersion", "3.1.1")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
+            modelBuilder.Entity("Model.Entities.Category", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("Label")
+                        .IsRequired()
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Categories");
+                });
+
             modelBuilder.Entity("Model.Entities.Comment", b =>
                 {
                     b.Property<int>("Id")
@@ -45,6 +60,9 @@ namespace Model.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
+                    b.Property<int?>("CategoryId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
@@ -62,6 +80,8 @@ namespace Model.Migrations
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("CategoryId");
 
                     b.HasIndex("DirectorId");
 
@@ -112,6 +132,10 @@ namespace Model.Migrations
 
             modelBuilder.Entity("Model.Entities.Movie", b =>
                 {
+                    b.HasOne("Model.Entities.Category", "Category")
+                        .WithMany("Movies")
+                        .HasForeignKey("CategoryId");
+
                     b.HasOne("Model.Entities.Person", "Director")
                         .WithMany("DirectedMovies")
                         .HasForeignKey("DirectorId");
